@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رٍحال للسياحة</title>
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="">
+   <a href="index.html"><h1>رِحال</h1></a> 
+    </div>
+    
+    <nav>
+    <a href="index.html">الرئيسية </a>
+    <a href="">تواصل معنا </a>
+    <a href="about.html">من نحن</a>
+    </nav>
+  </header>
+  <div class="container">
+  <section class="booking">
+  <h2>احجز رحلتك الآن</h2>
+  <form action="index.html" method="get">
+    <label for="name">الاسم الكامل:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">البريد الإلكتروني:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">رقم الهاتف:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="date">تاريخ الرحلة:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="guests">عدد التذاكر</label>
+    <input type="number" id="guests" name="guests" min="1" value="1" max="12">
+
+    <label for="message">ملاحظات إضافية:</label>
+    <textarea id="message" name="message" rows="4" placeholder="اختياري"></textarea>
+    <button type="submit">إرسال الحجز</button>
+  </form>
+</section>
+</div>
+    <footer class="footer">
+    <p>© 2025 جميع الحقوق محفوظة لشركة رحال السياحية-ليبيا</p>
+</footer>
+</body>
+</html>

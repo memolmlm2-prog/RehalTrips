@@ -1,0 +1,214 @@
+ @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@400;600;800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+body{
+  padding: 0;
+  margin: 0;
+  direction: rtl;
+  background-color: #f5f5f5;
+ font-family: 'Almarai', sans-serif;
+}
+body::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}
+header{
+  width: 100%;
+  display: flex;
+ justify-content: space-between;
+  align-items: center;
+  height: 7vh;
+background-color: #ffffff;
+  padding: 1vh 0;
+
+}
+.logo{
+  display: flex;
+  height: 100%;
+  width: 30%;
+  align-items: center;
+
+
+}
+header img{
+  display: flex;
+  height: 100%;
+  /* margin-left: 0.4vw; */
+  margin: 0 0.4vw;
+  
+  
+
+}
+.logo a {
+text-decoration: none;
+color: black;
+}
+.logo h1{
+  font-size: 1.7rem;
+  margin-top: 0.4em;
+}
+nav{
+  display: flex;
+  gap:15%;
+  width: 70%;
+  align-items: center;
+
+
+}
+nav a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black;
+  padding: 1vh;
+  border-radius: 8px;
+transition: background-color 0.2s;
+}
+nav a:hover{
+  background-color: #b95a02;
+  color: white;
+  
+}
+.main {
+  position: relative;
+  width: 100%;
+  max-width: 4000px;
+  margin: auto;
+  overflow: hidden;
+  height: 0;
+  padding-top: 50.2%; 
+}
+
+.main img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+align-items: center;
+justify-content: center;
+  font-size: 14px;
+  background-color:rgb(255, 255, 255);
+  color: #454444;
+  padding: 1vh 0;
+  height: 20px;
+  
+}
+
+
+
+.tripoli{
+position: absolute;
+ width: 4%;   
+  height: 10%; 
+ top: 37%; left: 36%;
+background-color:transparent;
+
+}
+.libda{
+position: absolute;
+ top: 36%; left: 42%;
+ width: 6.6%;   
+  height: 9%; 
+background-color:transparent;
+
+}
+.east{
+position: absolute;
+ top: 37%; left: 57%;
+ width: 6.3%;   
+  height: 10%; 
+background-color:transparent;
+
+}
+.south{
+position: absolute;
+top: 54%; left: 48%;
+ width: 7%;   
+  height: 9%; 
+background-color:transparent;
+
+}
+.gadams{
+position: absolute;
+top: 50%; left: 29.6%;
+ width: 8%;   
+  height: 9%; 
+  background-color:transparent;
+
+}
+.home-gallery{
+  padding: 4vh 7vw;
+}
+
+.home-gallery h2{
+  text-align: center;
+  margin-bottom: 3vh;
+  color: #b95b02;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 2.2rem;
+    transition: transform 0.3s ease;
+
+}
+
+.card img{
+  width: 100%;
+  height: 55vh;
+  object-fit: cover;
+  border-radius: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card:hover img{
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+
+
+.map span{
+ display: none;
+  position: absolute;
+  top: -20%;              
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 5% 10%;       
+  border-radius: 8px;     
+  font-size: 1vw;       
+  font-weight: 500;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.map:hover span{
+  display:block;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 30px 20px;
+    text-align: center;
+  }
+ 
+}
+@media(max-width :700px){
+  nav a{
+  font-size: 1rem;
+  font-weight: 500;
+
+}
+}

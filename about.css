@@ -1,0 +1,150 @@
+
+.back-img{
+  position: relative;
+  width: 100%;
+  max-width: 1600px; 
+  margin: auto; 
+  overflow: hidden;
+}
+
+.back-img img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.back-img h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Changa', sans-serif;
+  color: #fff;
+  font-size: 3.3rem;
+  opacity: 0.8;
+  text-align: center;
+}
+
+
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+     "a a a a"
+     "v v m m"
+     "w w c c"
+     ;
+ 
+}
+
+.about{
+grid-area: a;
+}
+.vision{
+grid-area: v;
+}
+.message{
+grid-area: m;
+}
+.why-us{
+grid-area: w;
+}
+.why-us ul{
+text-align: right;
+}
+.contact{
+ grid-area: c;
+}
+.content > div {
+  background: #ffffff;
+  border-radius: 12px;
+  margin: 3vh;
+  padding: 1vh ;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.content h2{
+  color: #b95b02;
+margin: 0;
+}
+.contact p{
+    margin: 0;
+}
+p,ul{
+    line-height: 5vh;
+}
+.contact .social {
+  display: flex;
+  justify-content: center; 
+  gap: 3vh; 
+}
+
+.contact .social img {
+  width: 7vh; 
+  height: 7vh;
+  transition: transform 0.3s;
+}
+
+
+@media (max-width: 1024px) {
+  .contact .social img {
+    width: 6vh;
+    height: 6vh;
+  }
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+       "a a"
+       "v m"
+       "w c";
+  }
+  .back-img{
+    max-width: 100%;
+  }
+  .back-img h1{
+    font-size: 2.5rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .contact .social img {
+    width: 5vh;
+    height: 5vh;
+  }
+  .content {
+    grid-template-columns: 1fr; 
+    grid-template-areas:
+       "a"
+       "v"
+       "m"
+       "w"
+       "c";
+  }
+  .back-img h1 {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+  .contact .social {
+    flex-wrap: wrap;
+    gap: 2vh;
+  }
+
+  .contact .social img {
+    width: 4.5vh;
+    height: 4.5vh;
+  }
+  .content {
+    grid-template-columns: 1fr;
+    gap: 1.5vh; 
+  }
+  .back-img h1 {
+        font-size: 1.6rem;
+    }
+}
+
